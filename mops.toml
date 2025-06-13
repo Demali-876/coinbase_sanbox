@@ -1,0 +1,5 @@
+[dependencies]
+base = "0.14.4"
+json = "1.2.1"
+hmac = "0.0.1"
+base64 = "1.0.0"

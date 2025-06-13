@@ -1,14 +1,19 @@
 {
   "canisters": {
-    "coinbase_sanbox_backend": {
-      "main": "src/coinbase_sanbox_backend/main.mo",
+    "idempotent_proxy_canister": {
+      "candid": "src/idempotent_proxy_canister/idempotent_proxy_canister.did",
+      "package": "idempotent_proxy_canister",
+      "type": "rust"
+    },
+    "sandbox": {
+      "main": "src/coinbase_sandbox/sandbox.mo",
       "type": "motoko"
     }
   },
   "defaults": {
     "build": {
       "args": "",
-      "packtool": ""
+      "packtool": "mops sources"
     }
   },
   "output_env_file": ".env",
